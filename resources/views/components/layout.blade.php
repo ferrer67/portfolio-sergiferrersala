@@ -15,21 +15,15 @@
 <body class="bg-gray-800 text-white mb-10">
 <div>
     <nav class="flex justify-center  py-4 border-b border-white/10 bg-gray-900">
-        <div class="bg-blue-500">
-            <a href="/">
-                <img src="{{Vite::asset('resources/images/logo.svg')}}" alt="">
-            </a>
-        </div>
-
         <div class="">
-            <x-opciones-head-bar >Jobs</x-opciones-head-bar>
-            <x-opciones-head-bar >Careers</x-opciones-head-bar>
-            <x-opciones-head-bar >Salaries</x-opciones-head-bar>
-            <x-opciones-head-bar >Companies</x-opciones-head-bar>
+            <x-opciones-head-bar href="/">Inicio</x-opciones-head-bar>
+            <x-opciones-head-bar href="https://github.com/ferrer67/" >Github</x-opciones-head-bar>
+            <x-opciones-head-bar href="https://www.linkedin.com/in/sergi-ferrer-sala-9a21a2277/">LinkedIn</x-opciones-head-bar>
+            <x-opciones-head-bar href="/contacto">Contacto</x-opciones-head-bar>
         </div>
     </nav>
 
-    <main class="mt-10 max-w-[986px] mx-auto border-2 rounded-md">
+    <main class="mt-10 mx-auto">
         {{$slot}}
     </main>
 </div>
